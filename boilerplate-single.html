@@ -21,20 +21,74 @@
 
 class: center, middle
 
-# My Awesome Presentation
+# coreboot
+
+Paul Menzel
+
+Max-Planck-Institut für molekulare Genetik
+
+[!img von Institut]
 
 ---
 
-# Agenda
+# Übersicht/Agenda
 
-1. Introduction
-2. Deep-dive
-3. ...
+1. Was ist coreboot?
+2. Angriffsmodell
+3. Google Chromebooks
+4. Acer Chromebook R 13
+5. Demo
+6. Alternativen
+7. Fazit
 
-[NOTE]: This file is portable; you don't need any other file, or an internet connection for this presentation.
 ---
 
-# Introduction
+# Was ist coreboot?
+
+## Firmware allgemein
+
+1. Schnittstelle für einheitliche Oberfläche für Betriebssystem
+1. BIOS (flash) → Bootloader MBR → OS-Kernel
+1. x86: BIOS/UEFI
+    a) Oberfläche
+    a) Tianocore
+    a) Sicherheitsprobleme
+1. ARM: U-Boot, Barebox
+1. POWER: Petitboot
+1. x86: proprietär (USB, DSDT, Microcode-Aktualisierungen)
+1. [Flashrom](https://www.flashrom.org)
+
+---
+
+# Was ist coreboot?
+
+## Ringmodell
+
+1. [!img] Bild von Ron
+
+---
+
+# Einschub: Koprozessoren – Danke Hollywood
+
+1. Intel Mangement Engine (ME)
+2. AMD Platform Security Processor (PSP)
+3. ARC, Intel jetzt x86
+4. Betriebssystem
+
+---
+
+# Was ist coreboot?
+
+## Speziell
+
+1. Minimale Initialisierung der Hardware (keine Ein- und Bildschirmausgabe)
+2. Payload
+3. vboot
+
+Beispiel: coreboot → SeaBIOS → MBR → OS
+coreboot → GRUB → OS
+
+coreboot → Linux
 
     </textarea>
     <script type="text/javascript">
