@@ -45,6 +45,51 @@ Max-Planck-Institut für molekulare Genetik
 
 # Was ist coreboot?
 
+## Firmware allgemein
+
+1. Schnittstelle für einheitliche Oberfläche für Betriebssystem
+1. BIOS (flash) → Bootloader MBR → OS-Kernel
+1. x86: BIOS/UEFI
+    a) Oberfläche
+    a) Tianocore
+    a) Sicherheitsprobleme
+1. ARM: U-Boot, Barebox
+1. POWER: Petitboot
+1. x86: proprietär (USB, DSDT, Microcode-Aktualisierungen)
+1. [Flashrom](https://www.flashrom.org)
+
+---
+
+# Was ist coreboot?
+
+## Ringmodell
+
+1. [!img] Bild von Ron
+
+---
+
+# Einschub: Koprozessoren – Danke Hollywood
+
+1. Intel Mangement Engine (ME)
+2. AMD Platform Security Processor (PSP)
+3. ARC, Intel jetzt x86
+4. Betriebssystem
+
+---
+
+# Was ist coreboot?
+
+## Speziell
+
+1. Minimale Initialisierung der Hardware (keine Ein- und Bildschirmausgabe)
+2. Payload
+3. vboot
+
+Beispiel: coreboot → SeaBIOS → MBR → OS
+coreboot → GRUB → OS
+
+coreboot → Linux
+
     </textarea>
     <script src="out/remark.js" type="text/javascript">
     </script>
