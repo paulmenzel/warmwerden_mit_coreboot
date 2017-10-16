@@ -241,7 +241,7 @@ Weitere Überlegungen: https://trmm.net/Heads_threat_model
 1. Löschen von allen Daten
 1. Vollzugriff (TTY, Strg + Alt + t → `shell` → sudo cbmem -c)
 
-Aber immer noch kein Zugriff auf Flash-ROM-Chip …
+Aber immer noch kein Schreibzugriff auf Flash-ROM-Chip …
 
 ---
 
@@ -250,8 +250,7 @@ Aber immer noch kein Zugriff auf Flash-ROM-Chip …
 ## Write-Protect
 
 1. Schraube
-1. Todo: Bild von board
-1. Danach Zugriff
+1. Danach Schreibzugriff mit Flashrom
 
 ---
 
@@ -279,6 +278,13 @@ Präferenz: Samsung Chromebook Plus mit Rockchip RK3399, aber nur in USA
 Öffnen und Entfernen der Schraube
 
 <img alt="Geöffnetes Acer Chromebook R 13" src="acer_chromebook_r_13_offen.jpg" width="100%" \>
+
+---
+
+## Stand
+
+1.  Gebaut mit [Libettereboot](https://git.code.paulk.fr/gitweb/?p=libettereboot.git;a=summary) von Paul Kocialkowski
+1.  Abbild mit gelieferten Flashrom geschrieben: `flashrom -w my_coreboot.rom`
 
 ---
 
