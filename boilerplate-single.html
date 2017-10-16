@@ -34,7 +34,7 @@ Paul Menzel
 
 # Übersicht/Agenda
 
-1. Was ist coreboot?
+1. Was ist Firmware?
 2. Angriffsmodell
 3. Google Chromebooks
 4. Acer Chromebook R 13
@@ -46,19 +46,31 @@ Paul Menzel
 
 ---
 
-# Was ist coreboot?
+# Was ist Firmware?
 
-## Firmware allgemein
+Firmware in allen Komponenten
 
-1. Schnittstelle für einheitliche Oberfläche für Betriebssystem
-1. BIOS (flash) → Bootloader MBR → OS-Kernel
+1.  Hauptplatine
+1.  Embedded Controller
+1.  BCM (Baseboard Management Controller, IPMI)
+1.  Erweiterungskarten (Grafik-, Netzwerkkarte, RAID-Controller, …)
+1.  Festplatte (HDD, SSD)
+1.  PCM
+1.  […]
+
+---
+
+# Was ist Firmware?
+
+1. Einheitliche Schnittstelle für Betriebssystem
+1. x86: BIOS (flash) → Bootloader MBR → OS-Kernel
 1. x86: BIOS/UEFI
-    a) Oberfläche
-    a) Tianocore
-    a) Sicherheitsprobleme
+    1. Grafische Oberfläche
+    1. Tianocore
+    1. Sicherheitsprobleme
 1. ARM: U-Boot, Barebox
-1. POWER: Petitboot
-1. x86: proprietär (USB, DSDT, Microcode-Aktualisierungen)
+1. OpenPOWER: [Hostboot, SkiBoot, Petitboot, …](https://www.thomas-krenn.com/de/wiki/Bootprozess_eines_OpenPOWER_Servers)
+1. x86: proprietär (USB, ACPI, Microcode-Aktualisierungen)
 1. [Flashrom](https://www.flashrom.org)
 
 ---
