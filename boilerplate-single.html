@@ -160,11 +160,9 @@ Quelle: [Linuxcon 2017 NERF](https://docs.google.com/presentation/d/1rz6ATJ6PNf_
 
 ---
 
-# Was ist coreboot?
-
 ## Demo mit QEMU
 
-* [Lektion 1](https://www.coreboot.org/Lesson1)
+### [Lektion 1](https://www.coreboot.org/Lesson1)
 
 ```
 $ git clone --recurse-submodules http://review.coreboot.org/coreboot.git
@@ -173,6 +171,8 @@ $ make menuconfig
 $ make
 $ qemu-system-x86_64 -bios build/coreboot.rom -serial stdio
 ```
+
+### Meldungen und Zeitstempel
 
 * CBMEM console, CBMEM time stamps
 * Programm `cbmem`: `cbmem -c`, `cbmem -t`
