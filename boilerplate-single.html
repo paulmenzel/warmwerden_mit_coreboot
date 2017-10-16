@@ -62,7 +62,7 @@ Firmware in allen Komponenten
 
 1.  Hauptplatine
 1.  Hilfsprozessoren (Intel ME, AMD PSP, …)
-1.  Embedded Controller
+1.  Embedded Controller in Laptops
 1.  BCM (Baseboard Management Controller, stellt IPMI bereit)
 1.  Erweiterungskarten (Grafik-, Netzwerkkarte, RAID-Controller, …)
 1.  Festplatte (HDD, SSD)
@@ -225,10 +225,15 @@ Weitere Überlegungen: https://trmm.net/Heads_threat_model
 1. Bis auf die ersten zwei Modelle alle Geräte mit coreboot
 1. Architekturen: x86 (Intel), ARM (Rockchip, Mediatek, Nvidia, …), MIPS
 1. Eigenes Sicherheitskonzept vboot2 und TPM
+1. Freie Firmware *Chrome EC* läuft auf aktuellen Geräten
 1. coreboot → Depthcharge (Payload) → Linux (Chrome OS)
 1. Zeit bis Anmeldebildschirm nicht länger als 10 Sekunden
 1. QA: Testabteilungen (Programme Start, Einschlafen, Aufwachen)
 1. Aktualisierungen Over-the-air
+
+## Achtung bei x86
+
+1. Bei Geräten mit Intel x86 werden auch BLOBs von Intel, Firmware Support Package (FSP), verwendet.
 
 ---
 
