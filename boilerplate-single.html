@@ -62,15 +62,30 @@ Firmware in allen Komponenten
 
 # Was ist Firmware?
 
-1. Einheitliche Schnittstelle für Betriebssystem
-1. x86: BIOS (flash) → Bootloader MBR → OS-Kernel
-1. x86: BIOS/UEFI
-    1. Grafische Oberfläche
-    1. Tianocore
-    1. Sicherheitsprobleme
+---
+
+Einheitliche Schnittstelle für Betriebssystem
+
+### x86
+
+1. Ablauf: BIOS/UEFI im Flash-ROM-Chip → Bootloader im MBR → OS-Kernel
+1. Grafische Oberfläche
+1. UEFI-Implementierung [TianoCore](http://www.tianocore.org/) unter MIT-Lizenz
+1. Firmware der Hersteller proprietär
+1. Probleme: Start von USB, Fehler in ACPI, Microcode-Aktualisierungen, …
+
+### Nicht x86
+
 1. ARM: U-Boot, Barebox
 1. OpenPOWER: [Hostboot, SkiBoot, Petitboot, …](https://www.thomas-krenn.com/de/wiki/Bootprozess_eines_OpenPOWER_Servers)
-1. x86: proprietär (USB, ACPI, Microcode-Aktualisierungen)
+1. MIPS: GRUB, …
+
+---
+
+# Was ist Firmware?
+
+### Wie schreiben?
+
 1. [Flashrom](https://www.flashrom.org) zum Schreiben aus Betriebssystem
 
 ---
