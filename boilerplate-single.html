@@ -163,15 +163,19 @@ Einheitliche Schnittstelle für Betriebssystem
 
 ## Demo mit QEMU
 
-* [Lektion 1](https://www.coreboot.org/)
+* [Lektion 1](https://www.coreboot.org/Lesson1)
 
 ```
-$ git clone
-$ make crossgcc-i386
+$ git clone --recurse-submodules http://review.coreboot.org/coreboot.git
+$ make crossgcc-i386 CPUS=$(nproc)
 $ make menuconfig
 $ make
-$ qemu-system-x86
+$ qemu-system-x86_64 -bios build/coreboot.rom -serial stdio
 ```
+
+* CBMEM console, CBMEM time stamps
+* Programm `cbmem`: `cbmem -c`, `cbmem -t`
+* Linux-Kernel-Modul `memconsole_coreboot` exportiert Konsole über `/sys/log/firmware`
 
 ---
 
