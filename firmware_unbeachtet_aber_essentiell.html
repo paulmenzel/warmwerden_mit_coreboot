@@ -364,6 +364,13 @@ Präferenz: [Samsung Chromebook Plus mit Rockchip RK3399, aber nur in USA](https
 1.  Abbild mit gelieferten Flashrom geschrieben: `flashrom -w my_coreboot.rom`
 1.  Chrome OS startet noch und Betriebssystem von eMMC auch
 
+```
+$ git clone https://git.code.paulk.fr/libettereboot.git
+$ cd libettereboot
+$ for project in coreboot depthcharge vboot arm-trusted-firmware ; do ./libreboot download $project ; done ;
+$ ./libreboot cook coreboot depthcharge elm
+```
+
 ---
 
 # Mitmachen
