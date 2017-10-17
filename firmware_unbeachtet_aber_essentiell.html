@@ -220,6 +220,7 @@ $ git clone --recurse-submodules https://review.coreboot.org/coreboot.git
 $ make crossgcc-i386 CPUS=$(nproc)
 $ make menuconfig
 $ make
+$ build/cbfstool build/coreboot.rom print
 $ qemu-system-x86_64 -bios build/coreboot.rom -serial stdio
 ```
 
