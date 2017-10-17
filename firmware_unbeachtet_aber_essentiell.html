@@ -175,13 +175,15 @@ Ziel: Schnellstmögliche Übergabe von Kontrolle an Betriebssystem
     1. romstage
     1. ramstage
 1. [Payload](https://www.coreboot.org/Payloads)
+1. Für Go-Enthusiasten: [*u-root* is a "universal root". It's a root file system with mostly Go source with the exception of 5 binaries.](https://github.com/u-root/u-root)
 1. coreboot *kein* BIOS
 
 ### Beispiel
 
 1. coreboot → SeaBIOS → MBR → OS
 1. coreboot → GRUB → OS
-1. coreboot → Linux
+1. coreboot → Linux (Kexec) → Linux
+1. coreboot → Heads → Tails
 
 ---
 
